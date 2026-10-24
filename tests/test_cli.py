@@ -39,3 +39,9 @@ def test_empty_string_reports_zero(capsys):
     main(["--string-length", ""])
     captured = capsys.readouterr()
     assert "The length of the string is: 0" in captured.out
+
+def test_generate_password_cli(capsys):
+    # Test the --generate-password argument
+    main(["--generate-password"])
+    captured = capsys.readouterr()
+    assert "Generated password:" in captured.out
