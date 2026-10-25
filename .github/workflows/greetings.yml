@@ -6,7 +6,6 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     permissions:
-      issues: write
       pull-requests: write
     steps:
     - uses: actions/first-interaction@v1
