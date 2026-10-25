@@ -18,3 +18,8 @@ def test_generate_password_uses_valid_characters():
 def test_generate_password_generates_random_values():
     passwords = {generate_password() for _ in range(10)}
     assert len(passwords) > 1
+
+def test_generate_password_accepts_custom_length():
+    password = generate_password(length=8)
+    assert len(password) == 8
+
