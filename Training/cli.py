@@ -10,6 +10,7 @@ def build_parse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Training CLI. A simple GitHub issue contribution powered tool.")
     parser.add_argument("--string-length", type=str, default=None, help="Returns the length of a string.")
     parser.add_argument("--generate-password", action="store_true", default=None, help="Generate a random password.")
+    parser.add_argument("--length", type=int, default=None, help="Set the generated password length.")
     parser.add_argument("--version", action="version", version=f"Training {__version__}")
     return parser
 
@@ -19,7 +20,7 @@ def main(args: Optional[Sequence[str]] = None) -> None:
     if parsed_args.string_length is not None:
         print(f"The length of the string is: {len(str(parsed_args.string_length))}")
     if parsed_args.generate_password is not None:
-        print(f"Generated password: {generate_password()}")
+        print(f"Generated password: {generate_password(parsed_args.length)}")
     if not any(vars(parsed_args).values()):
         # No flag given: a bare `python -m Training` should explain the tool,
         # not report the length of a default that was never passed.
