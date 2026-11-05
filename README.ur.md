@@ -63,14 +63,14 @@ Training --string-length hello (Should return 5)
 
 ## 🗂 Issue labels
 
-  Label                        مطلب
-  ---------------------------- -----------------------------------
-  `good first issue`           آپ کی پہلی PR کے لیے بہترین
-  `easy` / `medium` / `hard`   کام کی مشکل کی سطح
-  `bug`                        کوئی چیز غلط نتیجہ دیتی ہے
-  `feature`                    کوئی نیا command یا option
-  `tests`                      missing tests لکھنا
-  `documentation`              دستاویزات یا README کو بہتر بنانا
+| Label | مطلب |
+|---|---|
+| `good first issue` | آپ کی پہلی PR کے لیے بہترین |
+| `easy` / `medium` / `hard` | کام کی مشکل کی سطح |
+| `bug` | کوئی چیز غلط نتیجہ دیتی ہے |
+| `feature` | کوئی نیا command یا option |
+| `tests` | missing tests لکھنا |
+| `documentation` | دستاویزات یا README کو بہتر بنانا |
 
 ## 🤝 قواعد
 
